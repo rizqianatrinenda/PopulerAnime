@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rizqi.populeranime.DetailAnime">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.rizqi.populeranime.DetailAnime"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/judul_anime"
+            android:text="JUDUL"
+            android:layout_below="@+id/gambar"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pengarang"
+            android:text="PENGARANG"
+            android:layout_below="@id/judul_anime"
+            android:layout_centerHorizontal="true"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_margin="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jumlah"
+            android:text="EPISODE"
+            android:layout_below="@+id/pengarang"
+            android:layout_centerHorizontal="true"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_margin="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sinopsis"
+            android:text="Sinopsis"
+            android:layout_below="@id/jumlah"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_margin="6dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/gambar"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_margin="6dp" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>
